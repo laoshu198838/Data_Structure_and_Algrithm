@@ -27,7 +27,7 @@ class SingleLinkList(object):
         return count
     
     def travel(self): """遍历整个链表"""
-        cur=self.__head
+        cur = self.__head
         while cur!=None:
             print(cur.elem,end=' ')
             cur=cur.next
@@ -89,7 +89,9 @@ class SingleLinkList(object):
                 return True count+=1
             cur=cur.next
             return False
-if __name__=='__main__': sll=SingleLinkList() print(sll.is_empty())
+if __name__ == '__main__':
+    sll = SingleLinkList()
+    print(sll.is_empty())
     print(sll.length())
     sll.append(10)
     print(sll.length())
